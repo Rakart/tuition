@@ -1,0 +1,12 @@
+<h1>Tutor Playground</h1>
+
+<div ng-show="user" class='userDetails'>
+	<h4>Welcome, {{user.data.facebook.displayName}}</h4>
+	<img ng-src='{{user.data.facebook.cachedUserProfile.picture.data.url}}'/>
+</div>
+
+<br/>
+
+<input type="button" class="btn" ng-click='login()' value="Login with Facebook">
+<input type="button" class="btn" ng-click='logout()' value="Logout">
+	

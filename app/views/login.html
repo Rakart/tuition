@@ -1,0 +1,16 @@
+<div class="login center-block jumbotron">
+	<form role="form">
+		<h2>Welcome to Orange Tuition</h2>
+		<div class="form-group">
+			<label for="email">Email</label> 
+			<input type="text" ng-model="user.email" class="form-control" id="email" placeholder="Email">
+		</div>
+		<div class="form-group">
+			<label for="password">Password</label>
+			<input type="password" ng-model="user.password" class="form-control" id="password" placeholder="Password">
+		</div>
+		<button ng-click="login(user)" class="btn btn-default">Login</button>
+	</form>
+	<br>
+	<a ng-href="#/Signup">Haven't registered as a tutor yet? Sign up here</a>
+</div>

@@ -1,0 +1,19 @@
+<table class='price-table table1'>
+	<thead>
+		<tr>
+			<th></th>
+			<th scope="col">Part Time</th>
+			<th scope="col">Full Time</th>
+			<th scope="col">MOE Certified</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat='level in levels'>
+			<th scope="row">{{level.level}}</th>
+			<td>${{level.rates.part_time}} / hr</td>
+			<td>${{level.rates.full_time}} / hr</td>
+			<td>${{level.rates.moe_cert}} / hr</td>
+		</tr>
+	</tbody>
+</table>
