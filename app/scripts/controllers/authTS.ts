@@ -8,6 +8,7 @@ interface IUser {
 
 class User {
 	constructor(user: IUser) {
+		user.email = 'steven';
 	}
 }
 
