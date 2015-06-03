@@ -1,3 +1,6 @@
+/* global Firebase */
+/// <reference path="../../../typings/angularjs/angular.d.ts"/>
+
 'use strict';
 
 /**
@@ -10,7 +13,6 @@
 var myApp = angular.module('tuitionApp');
 
 myApp.controller('AuthCtrl', ['$scope', '$rootScope', '$location', 'Login',  function($scope, $rootScope, $location, Login) {
-	
 
 	//Register as User
 	$scope.register = function(user) {
